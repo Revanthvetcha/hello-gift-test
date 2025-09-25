@@ -1,0 +1,51 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "store_id": {
+      "type": "string",
+      "description": "ID of the store"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "Name of the product"
+    },
+    "product_code": {
+      "type": "string",
+      "description": "Unique product code/SKU"
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category"
+    },
+    "unit_price": {
+      "type": "number",
+      "description": "Selling price per unit"
+    },
+    "cost_price": {
+      "type": "number",
+      "description": "Cost price per unit"
+    },
+    "stock_quantity": {
+      "type": "number",
+      "description": "Available stock quantity",
+      "default": 0
+    },
+    "min_stock_level": {
+      "type": "number",
+      "description": "Minimum stock level for alerts",
+      "default": 10
+    },
+    "unit": {
+      "type": "string",
+      "description": "Unit of measurement (piece, kg, liter, etc.)",
+      "default": "piece"
+    }
+  },
+  "required": [
+    "store_id",
+    "product_name",
+    "product_code",
+    "unit_price"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Expense",
+  "type": "object",
+  "properties": {
+    "store_id": {
+      "type": "string",
+      "description": "ID of the store"
+    },
+    "expense_name": {
+      "type": "string",
+      "description": "Name/description of expense"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "rent",
+        "utilities",
+        "supplies",
+        "marketing",
+        "maintenance",
+        "salaries",
+        "inventory",
+        "other"
+      ],
+      "description": "Expense category"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Expense amount"
+    },
+    "expense_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "receipt_url": {
+      "type": "string",
+      "description": "URL to receipt image"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes"
+    }
+  },
+  "required": [
+    "store_id",
+    "expense_name",
+    "category",
+    "amount",
+    "expense_date"
+  ]
+}

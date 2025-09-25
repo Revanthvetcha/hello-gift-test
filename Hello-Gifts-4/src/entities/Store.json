@@ -1,0 +1,36 @@
+{
+  "name": "Store",
+  "type": "object",
+  "properties": {
+    "store_name": {
+      "type": "string",
+      "description": "Name of the store"
+    },
+    "logo_url": {
+      "type": "string",
+      "description": "URL to store logo image"
+    },
+    "address": {
+      "type": "string",
+      "description": "Store address"
+    },
+    "contact_number": {
+      "type": "string",
+      "description": "Store contact number"
+    },
+    "manager_id": {
+      "type": "string",
+      "description": "User ID of store manager"
+    },
+    "gstin": {
+      "type": "string",
+      "description": "GST identification number"
+    }
+  },
+  "required": [
+    "store_name",
+    "address",
+    "contact_number",
+    "manager_id"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Payroll",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "description": "ID of the employee"
+    },
+    "month": {
+      "type": "string",
+      "description": "Month and year (e.g., 2024-01)"
+    },
+    "basic_salary": {
+      "type": "number",
+      "description": "Basic salary for the month"
+    },
+    "allowances": {
+      "type": "number",
+      "description": "Allowances",
+      "default": 0
+    },
+    "overtime_hours": {
+      "type": "number",
+      "description": "Overtime hours",
+      "default": 0
+    },
+    "overtime_rate": {
+      "type": "number",
+      "description": "Overtime rate per hour",
+      "default": 0
+    },
+    "deductions": {
+      "type": "number",
+      "description": "Total deductions",
+      "default": 0
+    },
+    "pf_deduction": {
+      "type": "number",
+      "description": "Provident fund deduction",
+      "default": 0
+    },
+    "tax_deduction": {
+      "type": "number",
+      "description": "Tax deduction",
+      "default": 0
+    },
+    "gross_salary": {
+      "type": "number",
+      "description": "Gross salary before deductions"
+    },
+    "net_salary": {
+      "type": "number",
+      "description": "Net salary after deductions"
+    }
+  },
+  "required": [
+    "employee_id",
+    "month",
+    "basic_salary",
+    "gross_salary",
+    "net_salary"
+  ]
+}

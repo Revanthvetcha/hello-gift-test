@@ -1,0 +1,66 @@
+{
+  "name": "Employee",
+  "type": "object",
+  "properties": {
+    "store_id": {
+      "type": "string",
+      "description": "ID of the store where employee works"
+    },
+    "employee_name": {
+      "type": "string",
+      "description": "Full name of employee"
+    },
+    "employee_id": {
+      "type": "string",
+      "description": "Unique employee ID"
+    },
+    "position": {
+      "type": "string",
+      "description": "Job position"
+    },
+    "department": {
+      "type": "string",
+      "description": "Department"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address"
+    },
+    "address": {
+      "type": "string",
+      "description": "Address"
+    },
+    "joining_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "basic_salary": {
+      "type": "number",
+      "description": "Basic monthly salary"
+    },
+    "allowances": {
+      "type": "number",
+      "description": "Monthly allowances",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "store_id",
+    "employee_name",
+    "employee_id",
+    "position",
+    "basic_salary"
+  ]
+}
